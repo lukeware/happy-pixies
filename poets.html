@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Poet API Internet</title>
+  <link rel="stylesheet" href="css/poets.css">
+  <link rel="icon" type="image/png" href="wats.png">
+</head>
+
+
+<body>
+  <main class="flex">
+  <section class="poetBoard">
+  <h4>Poets</h4>
+  <button onclick="displayPoetsPoems('#poe')">Edgar Allan Poe</button>
+  <button onclick="displayPoetsPoems('#dickinson')">Emily Dickinson</button>
+  <button onclick="displayPoetsPoems('#blake')">William Blake</button>
+  <button onclick="displayPoetsPoems('#keats')">John Keats</button>
+  <button onclick="displayPoetsPoems('#austen')">Jane Austen</button>
+  <button onclick="displayPoetsPoems('#twain')">Mark Twain</button>
+  <button onclick="displayPoetsPoems('#wilde')">Oscar Wilde</button>
+  <button onclick="displayPoetsPoems('#whitman')">Walt Whitman</button>
+  <button onclick="displayPoetsPoems('#shakespeare')">William Shakespeare</button>
+  </section>
+<section class="thePoems">
+  <div id="intro">Choose a poet to the left to view their work</div>
+  <div id="poe">
+    <img class="poetImg" src="images/poe.png" alt="Edgar Allan Poe">
+    <h1>Edgar Allan Poe</h1></div>
+  <div id="dickinson">
+    <img class="poetImg" src="images/emily.png" alt="Emily Dickinson">
+    <h1>Emily Dickinson</h1></div>
+  <div id="blake">
+    <img class="poetImg" src="images/williamb.png" alt="William Blake">
+    <h1>William Blake</h1></div>
+    <div id="austen">
+      <img class="poetImg" src="images/jane.png" alt="Jane Austen">
+      <h1>Jane Austen</h1></div>
+  <div id="keats">
+    <img class="poetImg" src="images/john.png" alt="John Keats">
+    <h1>John Keats</h1></div>
+  <div id="twain">
+    <img class="poetImg" src="images/twain.png" alt="Mark Twain">
+    <h1>Mark Twain</h1></div>
+  <div id="wilde">
+    <img class="poetImg" src="images/wilde.png" alt="Oscar Wilde">
+    <h1>Oscar Wilde</h1></div>
+  <div id="whitman">
+    <img class="poetImg" src="images/walt-whitman.png" alt="Walt Whitman">
+    <h1>Walt Whitman</h1></div>
+  <div id="shakespeare">
+    <img class="poetImg" src="images/william.png" alt="William Shakespeare">
+    <h1>William Shakespeare</h1></div>
+
+</section>
+</main>
+
+  <script src="js/poets.js"></script>
+</body>
+
+</html>

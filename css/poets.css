@@ -1,0 +1,122 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  transition: .4s;
+}
+body{
+ margin:5em;
+}
+
+h1{
+  text-align:center;
+  font-size: 3em;
+  text-decoration: underline;
+  margin-bottom:.7em;
+
+}
+
+h3{
+  font-family: sans-serif;
+  padding:.5em;
+  color:dodgerblue;
+  text-align:center;
+  font-size: 1.5em;
+}
+
+h4{
+  margin-bottom:1em;
+  font-size:1.25em;
+  text-decoration:underline;
+}
+
+.flex{
+  display:flex;
+}
+
+a{
+  display:block;
+}
+
+.poem{
+  margin-bottom:0em;
+  
+}
+
+.lines{
+  margin-bottom:.2em;
+  text-align:center;
+  font-size:1.4em;
+  color:#4f4f4f;
+}
+
+.lines:last-child{
+  /* border-bottom:2px solid dodgerblue; */
+  padding-bottom:2em;
+}
+
+.poetBoard{
+  background-color:dodgerblue;
+  padding:1.5em;
+  max-height:29.5em;
+  width:28%;
+}
+
+.thePoems{
+  width:72%;
+  padding:0 0em 0 3em;
+}
+
+button{
+  cursor: pointer;
+  background-image: none;
+  background-color: transparent;
+  border:none;
+  margin:left;
+  display:block;
+  color:white;
+  font-size: 1.75em;
+  margin-bottom:.4em;
+}
+
+
+
+button:hover{
+  color:black;
+  text-decoration: underline;
+}
+
+::selection{
+  background-color:dodgerblue;
+  color:white;
+}
+
+#intro{
+  font-size:4em;
+  max-width: 7em;
+  color:dodgerblue;
+}
+
+.poetImg{
+  display:block;
+  margin:0 auto;
+  margin-bottom:3.5em;
+}
+
+.actualPoem{
+  display:none;
+  padding-top: 1em;
+}
+
+.poemTitle{
+  cursor: pointer;
+  
+}
+
+.poem:nth-child(even){background-color: #f4f4f4;}
+.poem:nth-child(odd){background-color:white}
+
+.poemTitle:hover{
+  color:black;
+}
