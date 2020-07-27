@@ -31,6 +31,8 @@ let poeDiv = document.querySelector('#poe')
   poeDiv.style.display = "none";
 let dickinson = document.querySelector('#dickinson')
   dickinson.style.display = "none";
+let dunbar = document.querySelector('#dunbar')
+  dunbar.style.display = "none";
 let blake = document.querySelector('#blake')
   blake.style.display = "none";
   let austen = document.querySelector('#austen')
@@ -39,6 +41,8 @@ let keats = document.querySelector('#keats')
   keats.style.display = "none";
 let twain = document.querySelector('#twain')
   twain.style.display = "none";
+let wheatley = document.querySelector('#wheatley')
+  wheatley.style.display = "none";
 let wilde = document.querySelector('#wilde')
   wilde.style.display = "none";
 let whitman = document.querySelector('#whitman')
@@ -88,10 +92,12 @@ poemTitle.addEventListener("click", function() {
   Promise.all([
     fetch('https://poetrydb.org/author/Edgar Allan Poe'),
     fetch('https://poetrydb.org/author/Emily Dickinson'),
+    fetch('https://poetrydb.org/author/Paul Laurence Dunbar'),
     fetch('https://poetrydb.org/author/William Blake'),
     fetch('https://poetrydb.org/author/Jane Austen'),
     fetch('https://poetrydb.org/author/John Keats'),
     fetch('https://poetrydb.org/author/Mark Twain'),
+    fetch('https://poetrydb.org/author/Phillis Wheatley'),
     fetch('https://poetrydb.org/author/Oscar Wilde'),
     fetch('https://poetrydb.org/author/Walt Whitman'),
     fetch('https://poetrydb.org/author/William Shakespeare')
@@ -115,34 +121,43 @@ poemTitle.addEventListener("click", function() {
     createPoems(poems.title, poems.lines, dickinson)
   }
 
+
   for(poems of poet[2]){
-    createPoems(poems.title, poems.lines, blake)
+    createPoems(poems.title, poems.lines, dunbar)
   }
 
   for(poems of poet[3]){
+    createPoems(poems.title, poems.lines, blake)
+  }
+
+  for(poems of poet[4]){
     createPoems(poems.title, poems.lines, austen)
   }
 
 
-  for(poems of poet[4]){
+  for(poems of poet[5]){
     createPoems(poems.title, poems.lines, keats)
   }
 
  
 
-  for(poems of poet[5]){
+  for(poems of poet[6]){
     createPoems(poems.title, poems.lines, twain)
   }
 
-  for(poems of poet[6]){
-    createPoems(poems.title, poems.lines, wilde)
-  }
-
   for(poems of poet[7]){
-    createPoems(poems.title, poems.lines, whitman)
+    createPoems(poems.title, poems.lines, wheatley)
   }
 
   for(poems of poet[8]){
+    createPoems(poems.title, poems.lines, wilde)
+  }
+
+  for(poems of poet[9]){
+    createPoems(poems.title, poems.lines, whitman)
+  }
+
+  for(poems of poet[10]){
     createPoems(poems.title, poems.lines, shakespeare)
   }
 
