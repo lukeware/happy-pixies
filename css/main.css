@@ -4,7 +4,20 @@
    Author's custom styles
    ========================================================================== */
 
-
+   .skip-to-content-link {
+      background: #00657b;
+      color:white;        
+      height: 4  0px;
+      left: 50%;
+      padding: 8px;
+      position: absolute;
+      transform: translateY(-150%);
+      transition: transform 0.3s;
+      z-index:1;
+    }
+    .skip-to-content-link:focus {
+      transform: translateY(0%);
+    }
 
 
 
