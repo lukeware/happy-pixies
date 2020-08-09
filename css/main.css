@@ -12,7 +12,7 @@
       padding: 8px;
       position: absolute;
       transform: translateY(-150%);
-      transition: transform 0.3s;
+      transition: transform 0.4s;
       z-index:1;
     }
     .skip-to-content-link:focus {
